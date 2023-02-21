@@ -19,10 +19,10 @@ if (isset($_POST['submit'])) {
 
         if ($row = mysqli_fetch_array($query)) {
             if($row['role'] == 1) {
-                $_SESSION['role'] = $row['role'];
+                $_SESSION['role'] = 'admin';
                 header("Location: admin/index.php");
             } else {
-                $_SESSION['role'] = $row['role'];
+                $_SESSION['role'] = 'user';
                 header("Location: user/index.php");
             }
         } else {

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['role'] != 0) {
+if ($_SESSION['role'] != 'user') {
     header('location:../login.php');
 }
 ?>
@@ -16,6 +16,9 @@ if ($_SESSION['role'] != 0) {
 
 <body>
     <h1>USER AREA</h1>
+    <form action="../logout.php" method="POST">
+        <button type="submit" name="submit">Logout</button>
+    </form>
 </body>
 
 </html>

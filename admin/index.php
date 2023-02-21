@@ -1,8 +1,9 @@
 <?php
 session_start();
-if ($_SESSION['role'] != 1) {
+if ($_SESSION['role'] != 'admin') {
     header('location:../login.php');
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,9 @@ if ($_SESSION['role'] != 1) {
 
 <body>
     <h1>ADMIN AREA</h1>
+    <form action="../logout.php" method="POST">
+        <button type="submit" name="submit">Logout</button>
+    </form>
 </body>
 
 </html>
