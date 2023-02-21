@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +29,7 @@
                 <div class="container-fluid">
                     <button class="btn btn-white" id="sidebarToggle"> <i class="fa fa-bars"></i></button>
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                        <li class="nav-item active mx-5"><a class="nav-link" href="#!">Halo, Admin</a></li>
+                        <li class="nav-item active mx-5"><a class="nav-link" href="#!">Halo, <?= $_SESSION['name']; ?></a></li>
                     </ul>
                 </div>
             </nav>

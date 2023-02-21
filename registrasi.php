@@ -55,9 +55,12 @@ if (isset($_SESSION['role'])) {
 <body class="text-center">
 
     <main class="form-signin ">
-        <form action="cek_login.php" method="POST">
-            <h1 class="h3 mb-4 fw-normal" style="font-family: 'Fira Sans', sans-serif;">Login</h1>
-
+        <form action="cek_registrasi.php" method="POST">
+            <h1 class="h3 mb-4 fw-normal" style="font-family: 'Fira Sans', sans-serif;">Registrasi</h1>
+            <div class="form-floating">
+                <input type="text" class="form-control" name="name" id="floatingName" placeholder="name">
+                <label for="floatingName">Name</label>
+            </div>
             <div class="form-floating">
                 <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@gmail.com">
                 <label for="floatingInput">Email address</label>
@@ -67,10 +70,10 @@ if (isset($_SESSION['role'])) {
                 <label for="floatingPassword">Password</label>
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary mt-3" name="submit" type="submit">Sign in</button>
+            <button class="w-100 btn btn-lg btn-primary mt-3" name="submit" type="submit">Daftar</button>
         </form>
         <hr>
-        Belum punya Akun? Daftar <a href="registrasi.php">Disini</a>
+        Sudah punya Akun? Masuk <a href="login.php">Disini</a>
     </main>
 
 

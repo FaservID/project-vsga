@@ -119,87 +119,101 @@
     </div>
 
 
-    <div class="container mb-4">
+    <!-- <div class="container mb-4">
         <div class="card px-4 py-4">
-            <form action="">
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">No Akte Kelahiran</label>
+            <div class="card-body">
+                <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">No Akte Kelahiran</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="no_akte" class="form-control">
+                        </div>
                     </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Nama Calon Siswa</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="nama" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Nama Calon Siswa</label>
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Alamat</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="alamat" class="form-control">
+                        </div>
                     </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Asal Sekolah</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="asal_sekolah" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Alamat</label>
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Nama Ayah</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="nama_ayah" class="form-control">
+                        </div>
                     </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Nama Ibu</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="nama_ibu" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Asal Sekolah</label>
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Tanggal</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="date" name="tanggal_lahir" class="form-control">
+                        </div>
                     </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Usia</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" name="usia" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Nama Ayah</label>
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Sertifikat Akte Kelahiran</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="file" name="sertifikat" class="form-control">
+                            <div class="form-text"><span class="text-danger">*)</span> PDF Only, Max size 1MB</div>
+                        </div>
                     </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
+                    <div class="row py-2">
+                        <div class="col-lg-2 py-1">
+                            <label class="form-label" for="">Pas Foto</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="file" name="foto" class="form-control">
+                            <div class="form-text"><span class="text-danger">*)</span> JPG & PNG Only, Max size 1MB</div>
+                        </div>
                     </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Nama Ibu</label>
-                    </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Tanggal</label>
-                    </div>
-                    <div class="col-lg-10">
-                        <input type="date" class="form-control" style="width: 800px;">
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Usia</label>
-                    </div>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" style="width: 800px;">
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <div class="col-lg-2">
-                        <label class="form-label" for="">Sertifikat Akte Kelahiran</label>
-                    </div>
-                    <div class="col-lg-10">
-                        <input type="file" class="form-control" style="width: 800px;">
-                    </div>
-                </div>
-                <input type="submit" name="submit" value="Submit" id="submit">
-                <input type="reset" name="cancel" value="Cancel" id="cancel">
-            </form>
+                    <div class="d-flex justify-content-end px-2">
+                        <input type="submit" name="submit" value="Daftar" class="btn btn-primary mx-2" id="submit">
+                        <input type="reset" name="cancel" value="Cancel" class="btn btn-warning" id="cancel">
 
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </div> -->
     <div class="container">
         <header style="font-weight: bold; font-size: 30px; margin: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 5px;">Galery</header>
     </div>
