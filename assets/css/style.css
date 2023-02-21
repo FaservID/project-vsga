@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url('../image/bg.jpg');
+}
