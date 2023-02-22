@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <img src="assets/image/1.jpg" width="100%" style="filter: brightness(60%);" height="auto" alt="">
+    <img class="gmbr" src="assets/image/1.jpg" width="100%" style="filter: brightness(60%);" height="auto" alt="">
     <header style="position: absolute; font-size: 38px; margin-top: -680px; margin-left: 195px;  color: white; font-weight: bold; font-family: 'Times New Roman', Times, serif;">
         Pendaftaran Siswa Baru SD Negeri 01 Palembang Tahun 2023</header>
     <a href="#">
@@ -66,7 +66,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="card" style="width: 500px; margin-left: 145px;">
+                    <div class="card card1" style="width: 500px; margin-left: 145px;">
                         <div class="card-body">
                             <h5 class="card-title" style="background-color: rgba(176, 32, 32, 1) ;  padding: 1rem; color: white;">Data
                                 Pelengkap</h5>
@@ -77,7 +77,7 @@
 
                         </div>
                     </div>
-                    <div class="card" style="width: 500px; margin-top: 10px;  margin-bottom: 20px; margin-left: 145px;">
+                    <div class="card card1" style="width: 500px; margin-top: 10px;  margin-bottom: 20px; margin-left: 145px;">
                         <div class="card-body">
                             <h5 class="card-title" style="background-color: rgba(176, 32, 32, 1) ;  padding: 1rem; color: white;">Data
                                 Rinci</h5>

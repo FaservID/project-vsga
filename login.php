@@ -57,13 +57,24 @@ if (isset($_SESSION['role'])) {
     <main class="form-signin ">
         <form action="cek_login.php" method="POST">
             <h1 class="h3 mb-4 fw-normal" style="font-family: 'Fira Sans', sans-serif;">Login</h1>
+            <?php
+            if (isset($_SESSION['gagal'])) {
+            ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Gagal!</strong> <?= $_SESSION['gagal']; ?>.
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+                </div>
+            <?php
+                unset($_SESSION['gagal']);
+            }
 
+            ?>
             <div class="form-floating">
-                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@gmail.com">
+                <input type="email" class="form-control" name="email" required id="floatingInput" placeholder="name@gmail.com">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" name="password" required id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
 

@@ -58,15 +58,15 @@ if (isset($_SESSION['role'])) {
         <form action="cek_registrasi.php" method="POST">
             <h1 class="h3 mb-4 fw-normal" style="font-family: 'Fira Sans', sans-serif;">Registrasi</h1>
             <div class="form-floating">
-                <input type="text" class="form-control" name="name" id="floatingName" placeholder="name">
+                <input type="text" class="form-control" name="name" required id="floatingName" placeholder="name">
                 <label for="floatingName">Name</label>
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@gmail.com">
+                <input type="email" class="form-control" name="email" required id="floatingInput" placeholder="name@gmail.com">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                <input type="password" class="form-control" name="password" required id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
 

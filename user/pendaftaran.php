@@ -106,7 +106,7 @@ include('../partials/layout.php');
                             <label class="form-label" for="">Usia</label>
                         </div>
                         <div class="col-lg-10">
-                            <input type="text" name="usia" class="form-control">
+                            <input type="number" name="usia" class="form-control">
                         </div>
                     </div>
                     <div class="row py-2">
@@ -115,7 +115,7 @@ include('../partials/layout.php');
                         </div>
                         <div class="col-lg-10">
                             <input type="file" name="sertifikat" class="form-control">
-                            <div class="form-text"><span class="text-danger">*)</span> PDF Only, Max size 1MB</div>
+                            <div class="form-text"><span class="text-danger">*)</span> PDF Only</div>
                         </div>
                     </div>
                     <div class="row py-2">
@@ -124,7 +124,7 @@ include('../partials/layout.php');
                         </div>
                         <div class="col-lg-10">
                             <input type="file" name="foto" class="form-control">
-                            <div class="form-text"><span class="text-danger">*)</span> JPG & PNG Only, Max size 1MB</div>
+                            <div class="form-text"><span class="text-danger">*)</span> JPG & PNG Only</div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end px-2">
