@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
                 header("Location: user/index.php");
             }
         } else {
-            $_SESSION['error'] = 'Email dan Password Salah!';
+            $_SESSION['gagal'] = 'Email dan Password Salah!';
             header('location:login.php');
         }
     }
