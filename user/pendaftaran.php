@@ -141,6 +141,17 @@ include('../partials/layout.php');
 
     if ($result > 0) {
     ?>
+        <!-- <?php
+        if (isset($_SESSION['cancel_sukses'])) {
+        ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Sukses!</strong> <?= $_SESSION['cancel_sukses']; ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php
+            unset($_SESSION['cancel_sukses']);
+        }
+        ?> -->
         <div class="card mb-3 py-3 px-3" style="max-width: 100%">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -148,7 +159,10 @@ include('../partials/layout.php');
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Bukti Pendaftaran</h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title my-1">Bukti Pendaftaran</h5>
+                            <a href="edit_pendaftaran.php?id=<?= $data['id']; ?>" class="btn btn-outline-secondary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                        </div>
                         <hr>
                         <p class="card-text">
                         <table style="width:100%">
@@ -204,8 +218,9 @@ include('../partials/layout.php');
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-end">
-                <a href="javascript:window.open('bukti_pendaftaran.php?id=<?= $data['id']; ?>', 'Cetak Bukti Pendaftaran', 'width=900,height=900')" class="btn btn-primary mx-3 mb-3">Cetak Bukti Pendaftaran</a>
+            <div class="d-flex justify-content-end mb-2">
+                <a href="javascript:window.open('bukti_pendaftaran.php?id=<?= $data['id']; ?>', 'Cetak Bukti Pendaftaran', 'width=900,height=900')" class="btn btn-primary mx-3"><i class="fa fa-print"></i> Cetak Bukti Pendaftaran</a>
+                <a href="cancel_pendaftaran.php?id=<?= $data['id']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin membatalkan pendaftaran?')"><i class="fa fa-times"></i> Batalkan Pendaftaran</a>
             </div>
         </div>
 
